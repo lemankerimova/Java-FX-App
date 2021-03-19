@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="415.0" prefWidth="630.0" style="-fx-border-color: black; -fx-border-width: 5px;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="az.javafx.StudentFormController">
+    <top>
+        <Pane prefHeight="73.0" prefWidth="590.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="69.0" layoutY="6.0" prefHeight="62.0" prefWidth="482.0" text="StudentManagmentApp" textFill="#06ffe6" textOverrun="LEADING_ELLIPSIS">
+                    <font>
+                        <Font name="System Bold" size="42.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+    </top>
+    <bottom>
+        <Pane prefHeight="36.0" prefWidth="620.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="280.0" layoutY="10.0" prefHeight="17.0" prefWidth="61.0" text="16.01.2021" textFill="#fff5f5">
+                    <font>
+                        <Font name="System Italic" size="12.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+    </bottom>
+   <center>
+        <Pane prefHeight="288.0" prefWidth="590.0" style="-fx-background-color: #dbe3cc;" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="phoneField" layoutX="22.0" layoutY="142.0" prefHeight="25.0" prefWidth="112.0" />
+                <Label layoutX="28.0" layoutY="125.0" text="Phone" />
+                <TextField fx:id="firstnameField" layoutX="24.0" layoutY="91.0" prefHeight="25.0" prefWidth="111.0" />
+                <Label layoutX="24.0" layoutY="74.0" prefHeight="17.0" prefWidth="57.0" text="Firstname" />
+                <Label layoutX="22.0" layoutY="14.0" prefHeight="47.0" prefWidth="202.0" text="Student Form">
+                    <font>
+                        <Font name="Arial Bold" size="30.0" />
+                    </font>
+                </Label>
+                <Button fx:id="ignoreBtn" layoutX="535.0" layoutY="25.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-background-color: red;" text="Ignore" />
+                <Label layoutX="371.0" layoutY="125.0" text="DOB" />
+                <TextField fx:id="seriaNumField" layoutX="362.0" layoutY="87.0" prefHeight="25.0" prefWidth="173.0" />
+                <Label layoutX="372.0" layoutY="70.0" prefHeight="17.0" prefWidth="77.0" text="Seria Number" />
+            <TextField fx:id="emailField" layoutX="177.0" layoutY="142.0" prefHeight="25.0" prefWidth="116.0" />
+            <Label layoutX="183.0" layoutY="125.0" text="Email" />
+            <TextField fx:id="surnameField" layoutX="175.0" layoutY="87.0" prefHeight="25.0" prefWidth="117.0" />
+            <Label layoutX="180.0" layoutY="70.0" prefHeight="17.0" prefWidth="55.0" text="Surname" />
+            <DatePicker fx:id="dobField" layoutX="362.0" layoutY="142.0" />
+            <Button fx:id="saveBtn" layoutX="477.0" layoutY="25.0" mnemonicParsing="false" style="-fx-background-color: #28c900;" text="Save" />
+            <Label fx:id="successMessage" layoutX="194.0" layoutY="231.0" prefHeight="21.0" prefWidth="197.0" textAlignment="CENTER" textFill="#246f2d">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="femaleRadio" layoutX="197.0" layoutY="199.0" mnemonicParsing="false" text="Female" />
+            <RadioButton fx:id="maleRadio" layoutX="324.0" layoutY="199.0" mnemonicParsing="false" text="Male" />
+            </children></Pane>
+   </center>
+</BorderPane>
